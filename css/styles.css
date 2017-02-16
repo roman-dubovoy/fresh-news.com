@@ -1,0 +1,1050 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+body{
+    background: url("../img/main-background.png") repeat;
+    color: #374E36;
+    font-family: RobotoLight;
+    font-size: 1.3em;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #374E36;
+}
+
+.container{
+    width: 80%;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>.logo{
+    width: 17%;
+}
+
+header>button{
+    border: none;
+    background: transparent;
+    font-size: 0.9em;
+    font-family: RobotoLight;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.login-btn,
+.logout-btn{
+    width: 17%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-btn:hover,
+.logout-btn:hover{
+    text-decoration: underline;
+}
+
+.login-btn:active,
+.logout-btn:active{
+    outline: none;
+    border: none;
+}
+
+header>button>img{
+    margin-top: 2%;
+    padding-left: 10%;
+}
+
+#site-name{
+    width: 66%;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    font-family: Batang;
+    font-weight: bold;
+    text-align: center;
+}
+
+.add-news-btn,
+#to-top-btn {
+    position: fixed;
+    top: 87.5%;
+    left: 86%;
+    border: none;
+    background: transparent;
+}
+
+#to-top-btn {
+    left: 93%;
+}
+
+#add-news-btn:active,
+#to-top-btn:active{
+    outline: none;
+    border: none;
+}
+
+.add-news-link{
+    display: none;
+}
+
+#reg-form, #auth-form{
+    margin: 0 auto 0 auto;
+    width: 40%;
+    text-align: center;
+}
+
+.form-title{
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+#name-input,
+#email-input,
+#pswd-input{
+    width: 100%;
+    outline: none;
+    border-radius: 0.3em;
+    border: 0.2em solid #8A976A;
+    margin: 3% 0 2% 0;
+    padding: 1.5%;
+    background: #ffffff;
+}
+
+#name-input[placeholder],
+#email-input[placeholder],
+#pswd-input[placeholder]{
+    font-family: RobotoLight;
+    font-size: 0.7em;
+}
+
+#name-input:hover,
+#email-input:hover,
+#pswd-input:hover,
+#name-input:active,
+#email-input:active,
+#pswd-input:active{
+    border-color: #374E36;
+}
+
+#reg-link{
+    display: inline-block;
+    width: 100%;
+    text-decoration: underline;
+    font-size: 0.8em;
+    color: #768f75;
+    text-align: end;
+    margin-top: 2%;
+}
+
+#reg-link:hover{
+    color: #374E36;
+}
+
+.submit-btn{
+    margin: 3% auto 0 auto;
+    padding: 0.75% 0 0.75% 0;
+    width: 50%;
+    border: 0.2em solid #859441;
+    border-radius: 0.3em;
+    background: transparent;
+    color: #859441;
+    font-family: RobotoLight;
+    font-size: 0.7em;
+}
+
+.submit-btn:hover{
+    border: 0.2em solid #859441;
+    background: #859441;
+    color: #edf7e6;
+}
+
+#add-news-item-form{
+    margin: 0 auto 3% auto;
+    width: 50%;
+}
+
+#title-textarea,
+#category-select,
+#content-textarea{
+    margin: 2% 0 2% 0;
+    padding: 1%;
+    outline: none;
+    font-family: RobotoLight;
+    font-size: 0.7em;
+    border: 0.1em solid #8A976A;
+    border-radius: 0.3em;
+    background: #ffffff;
+}
+
+#title-textarea,
+#content-textarea{
+    width: 100%;
+}
+
+#category-select {
+    width: 50%;
+}
+
+#add-news-item-btn{
+    width: 100%;
+ }
+
+.news-div{
+    width: 84%;
+    text-align: justify;
+    margin: 2% auto 2% auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.news-item-div{
+    width: 45%;
+    margin: 3% 0 3% 0;
+    text-align: start;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.news-title{
+    text-align: center;
+    margin: 3% 0 3% 0;
+}
+
+.category-and-datetime{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.news-category,
+.news-datetime{
+    display: inline-block;
+    margin: 3% 0 3% 0;
+    font-size: 0.7em;
+}
+
+.news-category{
+    width: 60%;
+}
+
+.news-datetime{
+    width: 40%;
+    text-align: end;
+}
+
+.news-content{
+    display: inline-block;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.news-item-link{
+    font-weight: bold;
+}
+
+.news-item-link:hover{
+    text-decoration: underline;
+}
+
+.news-divider{
+    width: 100%;
+    height: 1.5em;
+}
+
+.pagination{
+    width: 100%;
+    margin-bottom: 3%;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pagination-ul{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.pagination-ul li>a{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 2.1em;
+    height: 2.1em;
+    margin: 0.5em;
+    background: transparent;
+    border: 0.1em solid #8A976A;
+    border-radius: 0.3em;
+    color: #8A976A;
+    transition: .2s;
+}
+
+.pagination-ul li>a:hover{
+    background: #8A976A;
+    border: 0.1em solid #374E36;
+    color: #fff;
+}
+
+#prev,
+#next{
+    border: none;
+    transition: .2s;
+}
+
+#prev,
+#next:hover{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.one-news-item-div{
+    width: 84%;
+    margin: 5% auto 5% auto;
+    padding: 2%;
+    background: #fff;
+    border: 0.1em solid #8A976A;
+    border-radius: 0.3em;
+}
+
+.one-news-item-div>.news-category,
+.one-news-item-div>.news-datetime{
+    width: 48%;
+}
+
+.one-news-item-div>.news-content{
+    font-size: 1em;
+}
+
+.author, .connect-with-author{
+    font-size: 0.7em;
+    margin-top: 2%;
+}
+
+.sorry-msg{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+footer>p{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.error-msg{
+    font-size: 0.7em;
+    color: red;
+}
+
+.pswd-hint{
+    font-size: 0.6em;
+}
+
+@media only screen and (min-width: 768px) and (max-width : 992px){
+    .container{
+        width: 80%;
+    }
+
+    header{
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    header>.logo{
+        width: 17%;
+    }
+
+    header>.logo img{
+        width: 70%;
+    }
+
+    header>.login-btn,
+    header>.logout-btn{
+        font-size: 2em;
+    }
+
+    header>.login-btn>span,
+    header>.logout-btn>span{
+        font-size: 0.45em;
+    }
+
+    .login-btn,
+    .logout-btn{
+        width: 17%;
+    }
+
+    #site-name{
+        width: 66%;
+        font-size: 1.9em;
+        letter-spacing: 0.2em;
+    }
+
+    .news-div{
+        width: 100%;
+        margin: 2% auto 2% auto;
+    }
+
+    .news-item-div{
+        width: 100%;
+        margin: 0;
+    }
+
+    .news-title{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .news-category,
+    .news-datetime{
+        font-size: 0.9em;
+    }
+
+    .news-content{
+        font-size: 1em;
+    }
+
+    .pagination-ul li>a{
+        width: 2.2em;
+        height: 2.2em;
+        margin: 0.3em;
+    }
+
+    #prev>img,
+    #next>img{
+        width: 100%;
+    }
+
+
+    #to-top-btn{
+        top: 87%;
+        left: 92%;
+    }
+
+    .add-news-btn{
+        top: 75%;
+        left: 92%;
+    }
+
+    #to-top-btn>img,
+    .add-news-btn>img{
+        min-width: 25%;
+    }
+
+    .one-news-item-div{
+        width: 100%;
+        padding: 0 2% 0 2%;
+        border-radius: 0.5em;
+        background: #fff;
+    }
+
+    .one-news-item-div>.news-title{
+        font-size: 1.2em;
+    }
+
+    .one-news-item-div>.news-category,
+    .one-news-item-div>.news-datetime{
+        width: 48%;
+        font-size: 0.9em;
+    }
+
+    .one-news-item-div>.news-category{
+        margin-left: 2%;
+    }
+
+    .one-news-item-div>.news-content{
+        font-size: 1em;
+    }
+
+    .author, .connect-with-author{
+        font-size: 0.9em;
+        margin: 2% 0 3% 0;
+    }
+
+    #reg-form, #auth-form{
+        width: 60%;
+    }
+
+    .form-title{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    #name-input,
+    #email-input,
+    #pswd-input{
+        width: 100%;
+        font-size: 1em;
+        border-radius: 0.3em;
+        border: 0.1em solid #8A976A;
+        margin: 3% 0 2% 0;
+        padding: 1.5%;
+        background: #f6fbf2;
+    }
+
+    #name-input[placeholder],
+    #email-input[placeholder],
+    #pswd-input[placeholder]{
+        font-size: 1em;
+    }
+
+    #reg-link {
+        font-size: 0.9em;
+    }
+
+    .submit-btn{
+        margin: 3% auto 5% auto;
+        padding: 0.75% 0 0.75% 0;
+        width: 100%;
+        border: 0.1em solid #859441;
+        border-radius: 0.3em;
+        font-size: 1em;
+    }
+
+    .submit-btn:hover{
+        border: 0.1em solid #859441;
+    }
+
+    #add-news-item-form{
+        width: 100%;
+        margin: 3% 0 3% 0;
+    }
+
+    #add-news-item-form>.form-title{
+        font-size: 1.2em;
+    }
+
+    #add-news-item-form label{
+        font-size: 1em;
+    }
+
+    #title-textarea,
+    #category-select,
+    #content-textarea{
+        font-size: 1em;
+        border-radius: 0.3em;
+        border: 0.1em solid #8A976A;
+    }
+
+    #category-select {
+        width: 50%;
+        font-size: 1em;
+    }
+
+    #add-news-item-btn{
+        font-size: 1em;
+    }
+
+    .error-msg{
+        font-size: 0.8em;
+    }
+
+    .pswd-hint{
+        font-size: 0.6em;
+    }
+
+    footer{
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+
+    header{
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    header>.logo{
+        width: 17%;
+    }
+
+    header>.login-btn,
+    header>.logout-btn{
+        font-size: 2em;
+    }
+
+    header>.login-btn>span,
+    header>.logout-btn>span{
+        display: none;
+    }
+
+    .login-btn,
+    .logout-btn{
+        width: 10%;
+    }
+
+    #site-name{
+        width: 73%;
+        font-size: 1.7em;
+        letter-spacing: 0.2em;
+    }
+
+    .news-div{
+        width: 100%;
+        margin: 2% auto 2% auto;
+    }
+
+    .news-item-div{
+        width: 100%;
+        margin: 0;
+    }
+
+    .news-title{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .news-category,
+    .news-datetime{
+        font-size: 0.7em;
+    }
+
+    .news-content{
+        font-size: 0.9em;
+    }
+
+    .pagination-ul li>a{
+        margin: 0.2em;
+        font-size: 0.65em;
+    }
+
+    #prev>img,
+    #next>img{
+        width: 100%;
+    }
+
+    #to-top-btn{
+        top: 75%;
+        left: 89%;
+    }
+
+    .add-news-btn{
+        top: 62.5%;
+        left: 89%;
+    }
+
+    #to-top-btn>img,
+    .add-news-btn>img{
+        max-width: 100%;
+    }
+
+    .one-news-item-div{
+        width: 100%;
+        padding: 0 2% 0 2%;
+        border-radius: 0.5em;
+        background: #fff;
+    }
+
+    .one-news-item-div>.news-title{
+        font-size: 1em;
+    }
+
+    .one-news-item-div>.news-category,
+    .one-news-item-div>.news-datetime{
+        width: 48%;
+        font-size: 0.7em;
+    }
+
+    .one-news-item-div>.news-category{
+        margin-left: 2%;
+    }
+
+    .one-news-item-div>.news-content{
+        font-size: 0.9em;
+    }
+
+    .author, .connect-with-author{
+        font-size: 0.7em;
+        margin: 2% 0 3% 0;
+    }
+
+    #reg-form, #auth-form{
+        width: 75%;
+    }
+
+    .form-title{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    #name-input,
+    #email-input,
+    #pswd-input{
+        width: 100%;
+        font-size: 1em;
+        border-radius: 0.3em;
+        border: 0.1em solid #8A976A;
+        margin: 3% 0 2% 0;
+        padding: 1.5%;
+        background: #f6fbf2;
+    }
+
+    #name-input[placeholder],
+    #email-input[placeholder],
+    #pswd-input[placeholder]{
+        font-size: 1em;
+    }
+
+    #reg-link {
+        font-size: 0.9em;
+    }
+
+    .submit-btn{
+        margin: 3% auto 5% auto;
+        padding: 0.75% 0 0.75% 0;
+        width: 100%;
+        border: 0.1em solid #859441;
+        border-radius: 0.3em;
+        font-size: 1em;
+    }
+
+    .submit-btn:hover{
+        border: 0.1em solid #859441;
+    }
+
+    #add-news-item-form{
+        width: 100%;
+        margin: 3% 0 3% 0;
+    }
+
+    #add-news-item-form>.form-title{
+        font-size: 1.2em;
+    }
+
+    #add-news-item-form label{
+        font-size: 0.9em;
+    }
+
+    #title-textarea,
+    #category-select,
+    #content-textarea{
+        font-size: 1em;
+        border-radius: 0.3em;
+        border: 0.1em solid #8A976A;
+    }
+
+    #category-select {
+        width: 50%;
+        font-size: 1em;
+    }
+
+    #add-news-item-btn{
+        font-size: 1em;
+    }
+
+    .error-msg{
+        font-size: 0.8em;
+    }
+
+    .pswd-hint{
+        font-size: 0.7em;
+    }
+
+    footer{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-device-width : 480px){
+    .container{
+        width: 90%;
+    }
+
+    header{
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    header>.logo{
+        width: 25%;
+    }
+
+    header>.logo>a>img{
+        width: 75%;
+    }
+
+    header>.login-btn,
+    header>.logout-btn{
+        font-size: 2.3em;
+    }
+
+    header>.login-btn>span,
+    header>.logout-btn>span{
+        display: none;
+    }
+
+    header>.login-btn>img,
+    header>.logout-btn>img{
+        min-width: 95%;
+        margin-top: 2%;
+        padding-left: 10%;
+    }
+
+    .login-btn,
+    .logout-btn{
+        width: 15%;
+    }
+
+    #site-name{
+        width: 60%;
+        font-size: 3.5em;
+        letter-spacing: 0.2em;
+    }
+
+    .news-div{
+        width: 100%;
+        margin: 2% auto 2% auto;
+    }
+
+    .news-item-div{
+        width: 100%;
+        margin: 0;
+    }
+
+    .news-title{
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .news-category,
+    .news-datetime{
+        font-size: 1.7em;
+    }
+
+    .news-content{
+        font-size: 2em;
+    }
+
+    .pagination-ul li{
+        width: 8.33%;
+    }
+
+    .pagination-ul li>a{
+        width: 3em;
+        height: 3em;
+        margin: 0.2em;
+    }
+
+    #prev>img,
+    #next>img{
+        width: 100%;
+    }
+
+
+    #to-top-btn{
+        top: 75%;
+        left: 83%;
+    }
+
+    .add-news-btn{
+        top: 62.5%;
+        left: 83%;
+    }
+
+    #to-top-btn>img,
+    .add-news-btn>img{
+        min-width: 250%;
+    }
+
+    .one-news-item-div{
+        width: 100%;
+        padding: 0 2% 0 2%;
+        border-radius: 0.5em;
+    }
+
+    .one-news-item-div>.news-title{
+        font-size: 2.2em;
+    }
+
+    .one-news-item-div>.news-category,
+    .one-news-item-div>.news-datetime{
+        width: 48%;
+        font-size: 1.7em;
+    }
+
+    .one-news-item-div>.news-category{
+        margin-left: 2%;
+    }
+
+    .one-news-item-div>.news-content{
+        font-size: 2em;
+    }
+
+    .author, .connect-with-author{
+        font-size: 1.7em;
+        margin-top: 2%;
+    }
+
+    #reg-form, #auth-form{
+        width: 100%;
+    }
+
+    .form-title{
+        width: 100%;
+        font-size: 3.5em;
+    }
+
+    #name-input,
+    #email-input,
+    #pswd-input{
+        width: 100%;
+        font-size: 3em;
+        border-radius: 0.3em;
+        border: 0.1em solid #8A976A;
+        margin: 3% 0 2% 0;
+        padding: 1.5%;
+        background: #f6fbf2;
+    }
+
+    #name-input[placeholder],
+    #email-input[placeholder],
+    #pswd-input[placeholder]{
+        font-size: 3em;
+    }
+
+    #reg-link {
+        font-size: 2.3em;
+    }
+
+    .submit-btn{
+        margin: 3% auto 0 auto;
+        padding: 0.75% 0 0.75% 0;
+        width: 100%;
+        border: 0.1em solid #859441;
+        border-radius: 0.3em;
+        font-size: 3em;
+    }
+
+    .submit-btn:hover{
+        border: 0.1em solid #859441;
+    }
+
+    #add-news-item-form{
+        width: 100%;
+    }
+
+    #add-news-item-form>.form-title{
+        font-size: 3em;
+    }
+
+    #add-news-item-form label{
+        font-size: 2.3em;
+    }
+
+    #title-textarea,
+    #category-select,
+    #content-textarea{
+        font-size: 2em;
+        border-radius: 0.3em;
+        border: 0.1em solid #8A976A;
+    }
+
+    #category-select {
+        width: 50%;
+        font-size: 2em;
+    }
+
+    #add-news-item-btn{
+        font-size: 2.3em;
+    }
+
+    .error-msg{
+        font-size: 2em;
+    }
+
+    .pswd-hint{
+        font-size: 1.7em;
+    }
+
+    footer{
+        font-size: 2.3em;
+    }
+}
